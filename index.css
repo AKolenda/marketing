@@ -66,15 +66,15 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     background-color: #FFC107; /* Yellow background */
-    padding: 8px 10px; /* Reduced padding */
+    padding: 9px 5px; /* Reduced padding */
     border-radius: 5px; /* Optional: for rounded corners */
-    width: 400px;
-    height: 65px;
+    width: 21rem;
+    height: 3rem;
 }
 
 .bi-backpack {
-    width: 50px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
+    width: 45px; /* Adjust the size as needed */
+    height: 45px; /* Adjust the size as needed */
     margin-right: 10px;
     fill: #000; /* SVG color */
 }
@@ -84,17 +84,18 @@ nav ul li a.active {
     color: #000; /* Text color */
     font-family: 'Oswald', sans-serif; /* This is a generic sans-serif font */
     font-style: italic;
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 12px; /* Adjust font size as needed */
 }
 
 .logo-text p:first-child {
-    font-size: 30px; /* Larger size for the 'SkyPouch' text */
-    font-weight: 700; /* Bold font weight */
+    font-size: 2.2rem; /* Larger size for the 'SkyPouch' text */
+    font-weight: 400; /* Bold font weight */
+    margin-bottom: .25rem;
 }
 
 
 .logo-text p:last-child {
-    font-size: 18px; /* Smaller size for the slogan */
+    font-size: 1rem; /* Smaller size for the slogan */
     font-family: 'Oswald', sans-serif; /* This is a generic sans-serif font */
     font-style: italic;
 }
