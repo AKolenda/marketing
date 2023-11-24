@@ -153,6 +153,15 @@ nav ul li a.active {
     text-align: center;
 }
 
+.footer{
+    background-color: #333;
+    color: #FAF9F6;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+
+}
+
 
 .button {
     margin-top: 25rem; /* Adds space above the button */
@@ -183,6 +192,58 @@ nav ul li a.active {
     text-transform: uppercase;
 
 
+}
+
+
+.shop-categories {
+    display: flex;
+    justify-content: space-around; /* This will space out the categories evenly */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Adjust to your preferred max width */
+}
+
+.category {
+    text-align: center; /* Center-align the text */
+}
+
+.category img {
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 200px; /* Maximum width for the images */
+    margin-bottom: 8px; /* Space between the image and the category title */
+    border-radius: 5px; /* Optional: if you want rounded corners for the images */
+}
+
+.category h3 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase; /* Styling the category title to be uppercase */
+    font-weight: normal; /* Adjust font-weight as needed */
+    color: #333; /* Category title color */
+}
+
+.desc{
+    padding: 2rem;
+}
+
+.category{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+    padding: 20px;
+}
+
+.category:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Slightly deeper shadow on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.desc h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.desc{
+    text-align: center;
 }
 
 .button-primary:hover {
