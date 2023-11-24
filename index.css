@@ -67,7 +67,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: all 1s ease-out;
+    transition-duration: .5s;
+
 }
 
 nav ul li a:hover,
@@ -76,6 +78,7 @@ nav ul li a.active {
     border-radius: 20px;
     padding: 10px;
     color:#000
+
 }
 
 .logo-container {
