@@ -121,7 +121,7 @@ nav ul li a.active {
     width: 890px;
     height: 240px;
     margin: 0 auto; /* Centers the .banner-area horizontally */
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../pictures/SkyPouch-logos.jpg);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(pictures/SPL.png);
     background-size: cover;
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center horizontally */
