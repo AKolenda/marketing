@@ -236,10 +236,11 @@ nav ul li a.active {
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.desc h2{
+.desc h1{
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    font-family: 'CallunaSansItalic';
+    padding: 20px;
 }
 
 .desc{
