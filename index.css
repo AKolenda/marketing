@@ -82,9 +82,9 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     background-color: #f7bf50; /* Yellow background */
-    padding: 9px 5px; /* Reduced padding */
+    padding: .5rem; /* Reduced padding */
     border-radius: 5px; /* Optional: for rounded corners */
-    width: 21rem;
+    width: auto; /* Optional: for responsive layout */
     height: 3rem;
 }
 
@@ -98,7 +98,7 @@ nav ul li a.active {
 .logo-text p {
     margin: 0;
     color: #000; /* Text color */
-    font-family: 'Oswald', sans-serif; /* This is a generic sans-serif font */
+    font-family: 'CallunaSansItalic'; /* This is a generic sans-serif font */
     font-style: italic;
     font-size: 12px; /* Adjust font size as needed */
 }
@@ -106,15 +106,10 @@ nav ul li a.active {
 .logo-text p:first-child {
     font-size: 2.2rem; /* Larger size for the 'SkyPouch' text */
     font-weight: 400; /* Bold font weight */
-    margin-bottom: .25rem;
+
 }
 
 
-.logo-text p:last-child {
-    font-size: 1rem; /* Smaller size for the slogan */
-    font-family: 'Oswald', sans-serif; /* This is a generic sans-serif font */
-    font-style: italic;
-}
 
 
 .banner-area {
@@ -129,6 +124,29 @@ nav ul li a.active {
 
 }
 
+.image-fill{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(pictures/WOAH.png);
+    margin: 0 auto;
+    height: 1024px;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-fill2{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(pictures/WOAH2.png);
+    margin: 0 auto;
+    height: 1024px;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+
 .full-page-background {
     width: 100%; /* Span the full width of the viewport */
     height: 100vh; /* Span the full viewport height */
@@ -138,6 +156,8 @@ nav ul li a.active {
     justify-content: center; /* Center content horizontally, if needed */
     align-items: center; /* Center content vertically, if needed */
 }
+
+
 
 
 .content-area{
@@ -190,6 +210,7 @@ nav ul li a.active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
 
     text-transform: uppercase;
+    margin-right: 1rem;
 
 
 }
@@ -200,10 +221,13 @@ nav ul li a.active {
     justify-content: space-around; /* This will space out the categories evenly */
     margin: 0 auto; /* Center the container */
     max-width: 1200px; /* Adjust to your preferred max width */
+    padding: 1rem;
+    
 }
 
 .category {
     text-align: center; /* Center-align the text */
+    background: linear-gradient(rgba(26, 25, 25, 0.2), rgba(0,0,0,0.1))
 }
 
 .category img {
@@ -223,6 +247,7 @@ nav ul li a.active {
 
 .desc{
     padding: 2rem;
+    font-family: 'CallunaSans';
 }
 
 .category{
@@ -245,6 +270,24 @@ nav ul li a.active {
 
 .desc{
     text-align: center;
+}
+
+.s2{
+    background-color: #333;
+    color: #FAF9F6;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: "CallunaSans";
+}
+
+.s3{
+    /* create background color of #f7bf50 */
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: "CallunaSans";
 }
 
 .button-primary:hover {
