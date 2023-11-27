@@ -45,8 +45,15 @@ nav {
     align-items: center;
     background-color: #333;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
+.nv1{
+    margin-right: 2%;
+}
 .navbar .logo {
     background-color: blue;
     padding: 10px;
@@ -117,7 +124,7 @@ nav ul li a.active {
 
 .banner-area {
     width: 890px;
-    height: 240px;
+    height: 243px;
     margin: 0 auto; /* Centers the .banner-area horizontally */
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(pictures/SPL.png);
     background-size: cover;
@@ -125,6 +132,17 @@ nav ul li a.active {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 
+}
+
+
+.image-fill, .image-fill2 {
+    background-size: cover; /* Ensures the background covers the entire element */
+    margin: 0 auto;
+    height: 100vh; /* Adjust the height relative to the viewport */
+    width: 100%; /* Make the width full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-fill{
@@ -159,8 +177,6 @@ nav ul li a.active {
     justify-content: center; /* Center content horizontally, if needed */
     align-items: center; /* Center content vertically, if needed */
 }
-
-
 
 
 .content-area{
@@ -298,8 +314,9 @@ nav ul li a.active {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
 }
 
+
 /* Add responsiveness for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
     }
@@ -307,14 +324,39 @@ nav ul li a.active {
         justify-content: center; /* Center logo container on small screens */
         margin-bottom: 10px; /* Add space between logo container and nav */
     }
-    nav ul {
-        justify-content: center; /* Center navigation links on small screens */
+
+
+
+    .banner-area {
+        background-image: url('pictures/SPL.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%; /* Full width */
+        position: relative; /* If you're positioning children with absolute positioning */
     }
+    
+    .full-page-background{
+        background: #f7bf50;
+    }
+
+    .nv1{
+        margin-right: auto;
+    }
+
+    #s2, #s3, #s4{
+        width: 100%;
+    }
+
     nav ul li {
         text-align: center;
     }
     nav ul li a {
         display: block;
-        margin-bottom: 5px; /* Add space between navigation links */
+
     }
+
+
+
+
 }
+
