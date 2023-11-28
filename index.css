@@ -19,6 +19,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -309,6 +313,16 @@ nav ul li a.active {
     font-family: "CallunaSans";
 }
 
+.s5{
+    /* create background color of #f7bf50 */
+    color: #FAF9F6;
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: "CallunaSans";
+}
+
 .button-primary:hover {
     background-color: #e0a800; /* A darker yellow for hover state */
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
@@ -317,16 +331,59 @@ nav ul li a.active {
 
 /* Add responsiveness for smaller screens */
 @media (max-width: 1024px) {
+
+
+    html{
+        font-size: larger;
+    }
+
+    body{
+        font-size: 50px;
+    }
     .navbar {
         flex-direction: column;
+        align-items: center;
+        padding: 20px 0; /* Add some vertical padding */
     }
+
+    .logo-container{
+        display: none;
+    }
+
     .logo-container {
         justify-content: center; /* Center logo container on small screens */
-        margin-bottom: 10px; /* Add space between logo container and nav */
+        margin-bottom: 20px; /* Add space between logo container and nav */
     }
 
 
+    /* Style the navigation list for mobile */
+    nav ul {
+        width: 100%; /* Full width of the navbar */
+        padding: 0;
+    }
 
+    /* Style each list item */
+    nav ul li {
+        width: 100%; /* Full width to stack the menu items */
+        margin: 10px 0; /* Add some margin for tap targets */
+    }
+
+    /* Style the anchor tags to increase tap area and visibility */
+    nav ul li a {
+        display: block;
+        padding: 10px; /* Increase padding to make a larger tap area */
+        font-size: 1.2em; /* Increase font size for better readability */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Optional: Rounded corners for aesthetics */
+        transition: background-color 0.3s; /* Smooth transition for hover */
+    }
+
+    /* Optional: Change background color on tap for feedback */
+    nav ul li a:active {
+        background-color: #ddd; /* Light grey to indicate active tap */
+    }
+
+    
     .banner-area {
         background-image: url('pictures/SPL.png');
         background-size: contain;
