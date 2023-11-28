@@ -10,7 +10,10 @@
     <link rel="old stylesheet" href="index.css">
     <link rel="newer stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="index.css">
+    <script src="contact.js" defer></script>
 </head>
+
+
 
 <body>
     <header>
@@ -23,11 +26,10 @@
                 </svg>
                 <div class="logo-text">
                     <p>SkyPouch</p>
-                    <p>The fun backpack that is tight and slick</p>
                 </div>
             </div>  
             
-            <nav>
+            <nav class="nv1">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -38,8 +40,26 @@
     </header>
 
 
+    <main>
+        <section class="contact-container">
+            
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="thank-you-message" style="display:none;">Thank You For Submitting Your Request!</div>
+        </section>
+    </main>
 
 
 
+
+
+    <div class="footer">
+        <p>Thanks to our customers for making &copy;SkyPouch&trade; possible! </p>
+    </div>
 
 </body>

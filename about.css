@@ -30,7 +30,10 @@ body{
     padding: 20px;
     background-color: white;
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
-    margin: 5vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 1vh;
 }
 
 .rounded-shadow:hover {
@@ -67,4 +70,10 @@ body{
         1px 1px 0 white; /* Black text shadow to simulate border */
 }
 
+.about-container{
+    background-repeat: no-repeat;
+    background-size: cover; /* This will cover the entire element */
+    background-position: center; /* This will center the image in the element */
+    background-attachment: fixed; /* Optional: for a parallax scrolling effect */
+}
 
