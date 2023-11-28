@@ -32,3 +32,91 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var addToCartButton = document.querySelector('.add-to-cart-btn');
+    addToCartButton.addEventListener('click', function() {
+      // Change button text and style
+      this.textContent = 'Added!';
+      this.classList.add('added');
+  
+      // Show a toast notification
+      var toast = document.createElement('div');
+      toast.className = 'cart-toast';
+      toast.textContent = 'Item added to cart!';
+      document.body.appendChild(toast);
+  
+      // Animate toast notification
+      setTimeout(() => {
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+          setTimeout(() => {
+            document.body.removeChild(toast);
+          }, 500); // Wait for animation to finish before removing
+        }, 3000); // Duration the toast notification stays on screen
+      }, 100);
+  
+      // Revert button text after some time
+      setTimeout(() => {
+        this.textContent = 'Add to Cart';
+        this.classList.remove('added');
+      }, 2000);
+    });
+  });
+  
+
+
+
+// document.querySelector('.add-to-cart-btn').addEventListener('click', function() {
+//     // Assuming you have a product ID and quantity
+//     fetch('/add-to-cart', {
+//       method: 'POST',
+//       body: JSON.stringify({
+//         productId: '123',
+//         quantity: 1
+//       }),
+//       headers: {
+//         'Content-Type': 'application/json'
+//       }
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         if(data.success) {
+//           // Visual feedback code goes here
+      
+//           // Change button text and style
+//           const addToCartButton = document.querySelector('.add-to-cart-btn');
+//           addToCartButton.textContent = 'Added!';
+//           addToCartButton.classList.add('added');
+      
+//           // Show a toast notification
+//           const toast = document.createElement('div');
+//           toast.className = 'cart-toast';
+//           toast.textContent = 'Item added to cart!';
+//           document.body.appendChild(toast);
+      
+//           // Animate toast notification
+//           setTimeout(() => {
+//             toast.classList.add('show');
+//             setTimeout(() => {
+//               toast.classList.remove('show');
+//               setTimeout(() => {
+//                 document.body.removeChild(toast);
+//               }, 500); // Wait for animation to finish before removing
+//             }, 3000); // Duration the toast notification stays on screen
+//           }, 100);
+      
+//           // Revert button text after some time
+//           setTimeout(() => {
+//             addToCartButton.textContent = 'Add to Cart';
+//             addToCartButton.classList.remove('added');
+//           }, 2000);
+//         }
+//       })
+//       .catch((error) => {
+//         console.error('Error:', error);
+//       });
+      
+//   });
+  
