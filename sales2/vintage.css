@@ -2,10 +2,8 @@
 
 @font-face {
     font-family: 'CallunaSans';
-    src: url('fonts/CallunaSans-Regular.eot'); /* IE9 Compat Modes */
-    src: url('fonts/CallunaSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/CallunaSans-Regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/CallunaSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../fonts/CallunaSans-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/CallunaSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +11,7 @@
 
 @font-face {
     font-family: 'CallunaSansItalic';
-    src: url('fonts/CallunaSans-Italic.ttf') format('truetype');
+    src: url('../fonts/CallunaSans-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -107,6 +105,7 @@ header{
 
 .price {
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .original-price {
@@ -259,6 +258,7 @@ header{
     cursor: pointer;
     transition: background-color 0.3s ease;
     opacity: 0.6;
+    border-radius: 100%;
 }
 
 #prev {
