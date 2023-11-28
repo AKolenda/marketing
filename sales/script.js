@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.remove('added');
       }, 2000);
     });
-  });
+});
   
 
 
