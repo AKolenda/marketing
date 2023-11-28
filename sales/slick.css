@@ -27,18 +27,21 @@ header{
     margin-bottom: 4vh;
 }
 
-.selling-point{
-
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url(../pictures/backpacks.png); /* Apply the gradient over the orange background */
-
+.selling-point {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../pictures/backpacks.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* This will cover the entire element */
+    background-position: center; /* This will center the image in the element */
+    background-attachment: fixed; /* Optional: for a parallax scrolling effect */
 }
+
 
 
 .sale-page-container {
 
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
     height: 100vh;
     margin: 0 auto;
     width: 100%;
@@ -49,6 +52,8 @@ header{
     font-family: "CallunaSans";
     padding: 20px;
     gap: 20px;
+
+
 }
 
 .product-image {
@@ -90,7 +95,8 @@ header{
     grid-column: 2/4;
     padding: 20px;
 
-    margin-bottom: auto;
+    overflow: visible; /* Or 'auto' if you want scrollbars when content overflows */
+
     font-family: "CallunaSans", sans-serif;
     background-color: #fff; /* Optional: if you want a different background */
     border-radius: 30px;
@@ -148,6 +154,40 @@ header{
     justify-content: center; /* Center content horizontally, if needed */
     align-items: center; /* Center content vertically, if needed */
 }
+
+.collapsible {
+    background-color: #f9f9f9;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    background-color: #f1f1f1;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: "\2212"; /* Minus sign */
+}
+
 
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
