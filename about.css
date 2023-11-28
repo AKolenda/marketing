@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'CallunaSans';
+    src: url('fonts/CallunaSans-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/CallunaSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/CallunaSans-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/CallunaSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'CallunaSansItalic';
+    src: url('fonts/CallunaSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "CallunaSans";
+}
+
+.rounded-shadow {
+    border-radius: 15px; /* Adjust the px value for larger or smaller rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Horizontal offset, vertical offset, blur radius, color */
+                0 6px 20px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for a more diffuse effect */
+    /* Optional: padding, background-color, etc. */
+    padding: 20px;
+    background-color: white;
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.rounded-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), /* Larger shadow on hover */
+                0 12px 40px rgba(0, 0, 0, 0.2); /* More diffuse shadow on hover */
+}
