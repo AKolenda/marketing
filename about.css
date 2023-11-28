@@ -30,9 +30,41 @@ body{
     padding: 20px;
     background-color: white;
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    margin: 5vh;
 }
 
 .rounded-shadow:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), /* Larger shadow on hover */
                 0 12px 40px rgba(0, 0, 0, 0.2); /* More diffuse shadow on hover */
 }
+
+.about-image{
+    height: 65vh;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Or set a specific height */
+}
+
+.centered-text {
+    color: black; /* Text color */
+    font-size: 3em; /* Text size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white; /* Black text shadow to simulate border */
+}
+
+
