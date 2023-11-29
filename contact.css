@@ -89,3 +89,24 @@ main {
     background-attachment: fixed; /* Optional: for a parallax scrolling effect */
 
 }
+
+/* ... existing styles ... */
+
+
+.contact-container .icons a {
+    margin: 0 10px;
+    display: inline-block;
+    color: currentColor; /* Inherits color from parent */
+}
+
+.contact-container svg {
+    height: 40px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+    fill: currentColor; /* Icon color will be inherited from the parent element */
+    transition: transform 0.3s ease;
+}
+
+.contact-container a:hover svg {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
