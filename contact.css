@@ -110,9 +110,3 @@ main {
     transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
 
-#s9{
-    height: 35%;
-    width: fit-content;
-    transform: translateX(-10%); /* Move the element to the left by 50% of its own width */
-
-}
